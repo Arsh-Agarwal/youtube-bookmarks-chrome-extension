@@ -1,0 +1,34 @@
+{
+    "name": "Youtube Bookmarks",
+    "version": "1.0.0",
+    "description": "Bookmark youtube videos with current playback time",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "resources": [
+                "assets/bookmark.png",
+                "assets/play.png",
+                "assets/delete.png"
+            ]
+        }
+    ],
+    "action": {
+        "default_icon": {
+
+        },
+        "default_title": "My Youtube Bookmarks",
+        "default_popup": "index.html"
+    },
+    "manifest_version": 3
+}

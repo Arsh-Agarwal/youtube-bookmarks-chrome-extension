@@ -1,0 +1,54 @@
+.container{
+    width: 300px;
+    align-items: center;
+}
+
+.title{
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+}
+
+.bookmark-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.bookmark-btn{
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bookmark{
+    display: flex;
+    border-radius: 20px;
+    background-color: rgb(227, 252, 254);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    margin: 3px;
+    margin-bottom: 10px;
+}
+
+.bookmark-text{
+    flex: 1;
+    font-size: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.controls-container{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+}
+
+.bookmark-controls{
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
